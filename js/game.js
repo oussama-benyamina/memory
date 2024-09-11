@@ -33,7 +33,7 @@ function renderGameBoard(cards) {
         cardElement.innerHTML = `
             <div class="card-inner">
                 <div class="card-front"></div>
-                <div class="card-back">${card}</div>
+                <div class="card-back");">${card}</div>
             </div>
         `;
         cardElement.addEventListener('click', () => flipCard(cardElement, index));

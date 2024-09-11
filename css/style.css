@@ -62,7 +62,8 @@ body, html {
 h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+    
+    margin: 0;
 }
 
 h3 {
@@ -169,6 +170,9 @@ a:hover {
     margin-top: 10px;
     padding: 10px;
     background: #f7f7f7;
+
+    gap: 3px;
+
 }
 #chat-input {
     flex: 1;
@@ -184,6 +188,7 @@ a:hover {
     border-radius: 5px;
     cursor: pointer;
     height: 40px;
+    width: 60px !important;
 }
 #chat-form button:hover {
     background-color: #0056b3;
@@ -265,6 +270,8 @@ button {
     cursor: pointer;
 }
 
+p { margin: 1px;}
+
 button:hover {
     background: #0056b3;
 }
@@ -276,9 +283,9 @@ button:hover {
 
 #game-board, .game-board {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 2fr);
     gap: 10px;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 20px auto;
 }
 
@@ -311,19 +318,24 @@ button:hover {
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
-    border: 2px solid #007bff;
-    border-radius: 8px;
+ 
 }
 
 .card-front {
-    background-color: #007bff;
+    background-image: url('../img/blue_back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
 }
 
 .card-back {
-    background-color: #fff;
-    color: #007bff;
+    background-color: #0056b3; /* Use the background image */
+    background-size: cover; /* Ensure the image covers the entire card */
+    color: #f3f4f5;
     transform: rotateY(180deg);
+    border: 2px solid #007bff;
+    border-radius: 8px;
 }
 
 /* Game information styles */

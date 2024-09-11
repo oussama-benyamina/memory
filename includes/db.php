@@ -2,10 +2,10 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$servername = "localhost";  // Adresse IP de votre serveur MariaDB
-$username = "root";   // Nom d'utilisateur MariaDB
-$password = "1020";         // Mot de passe MariaDB
-$database = "memory_game";    // Nom de la base de données
+$servername = "localhost:3306";  // Adresse IP de votre serveur MariaDB
+$username = "memoryG";   // Nom d'utilisateur MariaDB
+$password = "Weaver12345!3";         // Mot de passe MariaDB
+$database = "konstantine-garozashvili_memory_game_db";    // Nom de la base de données
 
 // Créer une connexion
 $conn = new mysqli($servername, $username, $password, $database);

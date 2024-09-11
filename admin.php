@@ -1,5 +1,12 @@
 <?php
+session_start();
 require_once('includes/db.php'); // Ensure the path to db.php is correct
+
+// Check if user is logged in and is an admin
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
+    header("Location: logout.php"); // Redirect to login page or an error page
+    exit();
+}
 
 // Pagination variables
 $limit = 10; // Number of records per page
