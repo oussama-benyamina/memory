@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 $servername = "localhost";  // Adresse IP de votre serveur MariaDB
 $username = "root";   // Nom d'utilisateur MariaDB
-$password = "";         // Mot de passe MariaDB
+$password = "1020";         // Mot de passe MariaDB
 $database = "memory_game";    // Nom de la base de données
 
 // Créer une connexion
